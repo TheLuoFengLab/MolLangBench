@@ -1,0 +1,11 @@
+**Instructions:**
+Analyze the given molecule represented as an image to determine the bond type between the two highlighted atoms.
+
+- Identify whether a bond exists between these two highlighted atoms. 
+- Classify the bond type as follows:
+  - No bond: Return `0`
+  - Single bond: Return `1`
+  - Double bond: Return `2`
+  - Triple bond: Return `3`
+  - **Aromatic bond:** Return `12`
+- Present the bond type as an integer enclosed within <bond_type> and </bond_type>.

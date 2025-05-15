@@ -1,0 +1,10 @@
+**Instructions:**
+Analyze the given molecule represented as an image to identify all ring junction atoms.
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify ring junction atoms, defined as atoms shared between two or more rings.
+- Count the total number of ring junction atoms.
+- List the indices of all ring junction atoms.
+- Present the result in the following structured format:
+  1.  Total number of ring junction atoms: Enclose the integer within <count> and </count>. 
+  2. Indices of ring junction atoms: Enclose the list of indices within <atom_indices> and </atom_indices>.

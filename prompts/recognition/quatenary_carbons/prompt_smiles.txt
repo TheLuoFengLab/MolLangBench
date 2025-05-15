@@ -1,0 +1,14 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to identify all quaternary carbon atoms (i.e., carbon atoms bonded to exactly four other carbon atoms).
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.  
+- Identify quaternary carbons by determining which carbon atoms are quaternary carbon atoms.  
+- Count the total number of quaternary carbons.  
+- List the indices of all quaternary carbons.  
+- For each quaternary carbon, provide the indices of the carbon atoms to which it is bonded.  
+- Present the results in the following structured format:  
+  1. Total number of quaternary carbons: Enclose the integer within <count> and </count>. 
+  2. Indices of quaternary carbons: Enclose the list of indices within <atom_indices> and </atom_indices>.
+  
+**SMILES string:**  
+`{smiles}`

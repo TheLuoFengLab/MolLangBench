@@ -1,0 +1,10 @@
+**Instructions:**
+Analyze the given molecule represented as an image to determine the total number of halogen atoms present in the molecule.
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify halogen atoms, including the elements fluorine (F), chlorine (Cl), bromine (Br), and iodine (I).
+- Count the total number of halogens.
+- Provide the indices of all halogen atoms.
+- Present the results in the following structured format:
+  1. Total number of halogen atoms: Enclose this integer within <count> and </count>. 
+  2. Indices of halogen atoms: Enclose the list of halogen atom indices <atom_indices> and </atom_indices>.

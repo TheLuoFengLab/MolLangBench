@@ -1,0 +1,9 @@
+**Instructions:**
+Analyze the given molecule structure description and generate the corresponding molecular structure as an image.
+
+- This description provides an unambiguous and detailed account sufficient to completely reconstruct the molecule.
+- Interpret stereochemistry, charges, and isotopes if mentioned in the description.
+- Return the resulting molecular structure as an image.
+
+**Molecule structure description:**
+{structure_description}

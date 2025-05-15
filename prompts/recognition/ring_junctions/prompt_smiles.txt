@@ -1,0 +1,13 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to identify all ring junction atoms (i.e., atoms that are shared between two or more rings).
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.  
+- Identify ring junction atoms by determining which atoms are shared between at least two rings.  
+- Count the total number of ring junction atoms.  
+- List the indices of all ring junction atoms.  
+- Present the results in the following structured format:  
+  1. Total number of ring junction atoms: Enclose the integer within <count> and </count>. 
+  2. Indices of ring junction atoms: Enclose the list of indices within <atom_indices> and </atom_indices>.
+  
+**SMILES string:**  
+`{smiles}`

@@ -1,0 +1,12 @@
+"**Instructions:**
+Analyze the given molecule and the editing instruction below, then generate the SMILES (Simplified Molecular Input Line Entry System) for the edited molecule.
+
+- Use the supplied SMILES as the starting structure. Do not change any atoms, bonds, stereochemistry, charges, or isotopes unless the instruction explicitly tells you to.
+- Apply the modification exactly once; the instruction is unambiguous.
+- Return the resulting SMILES string enclosed within <smiles> and </smiles> tags. 
+
+**Original molecule represented by SMILES:**
+`{original_smiles}`
+
+**Editing instruction:**
+{edit_instructions}

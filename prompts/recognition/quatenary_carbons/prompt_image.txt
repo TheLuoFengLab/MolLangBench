@@ -1,0 +1,11 @@
+**Instructions:**
+Analyze the given molecule represented as an image to identify all quaternary carbon atoms (i.e., carbon atoms bonded to exactly four other carbon atoms).
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify quaternary carbons by determining which carbon atoms are quaternary carbon atoms.  
+- Count the total number of quaternary carbons.  
+- List the indices of all quaternary carbons.  
+- For each quaternary carbon, provide the indices of the carbon atoms to which it is bonded.  
+- Present the results in the following structured format:  
+  1. Total number of quaternary carbons: Enclose the integer within <count> and </count>. 
+  2. Indices of quaternary carbons: Enclose the list of indices within <atom_indices> and </atom_indices>.

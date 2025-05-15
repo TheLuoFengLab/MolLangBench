@@ -1,0 +1,12 @@
+**Instructions:**
+Analyze the given molecule represented by a SMILES string to identify all atoms that are exactly two bonds away (2-hop neighbors) from a specified atom.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify the atom at the specified index.
+- Determine which atoms lie exactly two bonds away (smallest path distance of 2) from the specified atom.
+- Present the results in the following structured format:
+  1. Number of 2-hop neighbors: Enclose this integer within <count> and </count>.
+  2. Indices of the 2-hop neighbors: Enclose the list of these indices within <atom_indices> and </atom_indices>.
+  
+**SMILES string:** `{smiles}`
+**Target atom index:** {target_atom}

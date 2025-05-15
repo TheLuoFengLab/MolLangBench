@@ -1,0 +1,9 @@
+**Instructions:**
+Analyze the given molecular structure image and the editing instruction below, then generate a new image representing the edited molecule.
+
+-Use the supplied molecule as the starting structure. Do not change any atoms, bonds, stereochemistry, charges, or isotopes unless the instruction explicitly tells you to.
+- Apply the modification exactly once; the instruction is unambiguous.
+- Return the resulting molecular structure as an image.
+
+**Editing instruction:**
+{edit_instructions}

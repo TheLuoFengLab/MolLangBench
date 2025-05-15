@@ -1,0 +1,16 @@
+**Instructions:**
+Analyze the given molecule represented by a SMILES string to determine the bond type between two specified atoms.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify the bond (if any) between the two specified atoms.
+- Classify the bond type according to the following rules:
+  - No bond: Return `0`
+  - Single bond: Return `1`
+  - Double bond: Return `2`
+  - Triple bond: Return `3`
+  - Aromatic bond: Return `12`  
+- Return the bond type (0, 1, 2, or 12) in the specified structured format by enclosing it within <bond_type> and </bond_type>.
+
+**SMILES string:** `{smiles}`
+**Target atom index 1:** {target_atom_0}
+**Target atom index 2:** {target_atom_1}

@@ -1,0 +1,9 @@
+**Instructions:**
+Analyze the given molecule represented as an image to identify all atoms are exactly three bonds away (3-hop neighbors) from the highlighted atom.
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify the highlighted atom.
+- Determine which atoms lie exactly three bonds away (smallest path distance of 3) from the highlighted atom.
+- Present the results in the following structured format:
+  1. Number of 3-hop neighbors: Enclose this integer within <count> and </count>.
+  2. Indices of the 3-hop neighbors: Enclose the list of these indices within <atom_indices> and </atom_indices>.

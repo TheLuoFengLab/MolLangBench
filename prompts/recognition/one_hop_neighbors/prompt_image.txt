@@ -1,0 +1,10 @@
+**Instructions:**
+Analyze the given molecule represented as an image to determine the degree and connected atoms for the highlighted atom.
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify the highlighted atom.
+- Determine the degree of the highlighted atom (i.e., the number of directly bonded atoms).
+- List the indices of the atoms directly connected to it.
+- Present the results in the following structured format:
+  1. Degree of the highlighted atom: Enclose the integer within <count> and </count>.
+  2. Indices of connected atoms: Enclose the list of indices within <atom_indices> and </atom_indices>.

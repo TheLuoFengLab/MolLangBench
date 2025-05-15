@@ -1,0 +1,12 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to determine the total number of halogen atoms in the molecule.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify halogen atoms, including the elements fluorine (F), chlorine (Cl), bromine (Br), and iodine (I).
+- Count the total number of halogens.
+- Provide the indices of all halogen atoms.
+- Present the results in the following structured format:
+  1. Total number of halogen atoms: Enclose this integer within <count> and </count>. 
+  2. Indices of halogen atoms: Enclose the list of halogen atom indices <atom_indices> and </atom_indices>. 
+  
+**SMILES string:** `{smiles}`
