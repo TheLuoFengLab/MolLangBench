@@ -46,35 +46,11 @@
 
 **MolLangBench** is a comprehensive benchmark designed to evaluate the fundamental capabilities of AI models in language-prompted molecular structure recognition, editing, and generation.
 
-MolLangBench includes:
-- **Molecular Structure Recognition** (200 examples each for 18 subtasks): identify structural features of a given molecule based on a natural language prompt. These subtasks cover:
-  - *Local topology and connectivity*: identifying bond types, determining neighboring atoms at various distances, and detecting atoms with specific roles such as ring junctions or quaternary carbons.
-  - *Functional group and substructure detection*: recognizing motifs like amides, aldehydes, benzene rings, furans, and pyridines.
-  - *Stereochemistry recognition*: determining stereochemical configurations at chiral centers (**R/S**) and double bonds (**E/Z**).
-- **Language-Prompted Molecule Editing** (200 examples): modify a given molecule according to a natural language instruction describing the desired structural change.
-- **Molecule Generation from Structural Descriptions** (200 examples): generate a molecule from a complete and unambiguous structural description in natural language.
-
-To ensure deterministic and high-quality outputs, MolLangBench is constructed with:
-- **Automated generation** of recognition tasks using cheminformatics tools
-- **Expert annotation and rigorous validation** for editing and generation tasks
-
-
-MolLangBench supports molecular inputs across three different modalities---based on how the molecule is represented:
-- **Molecular graphs** (inherently)
-- **Linear SMILES strings**
-- **Molecular images**
-
-All tasks are designed to pair these representations with natural language prompts. However, as practical graph–language models remain underdeveloped, we focus our evaluations on language-only and vision–language models.
-
 This repository provides:
 - Code and examples to load and use the dataset directly from the [Hugging Face Dataset](https://huggingface.co/datasets/ChemFM/MolLangBench)
 - Evaluation scripts and templates to test OpenAI models (e.g., o1, o3, o4-mini) using either molecular images or SMILES strings as inputs
 
 It is straightforward to extend this repository to evaluate other language or multimodal models by adapting the provided input formatting and evaluation templates.
-
-<p align="center">
-  <img src="images/mollangbench_overview.jpg" alt="MolLangBench Overview" width="800">
-</p>
 
 ## Getting Started
 
