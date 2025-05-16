@@ -1,0 +1,13 @@
+**Instructions:**  
+Analyze the given molecule represented as an image to determine the total number of aldehyde functional groups present in the molecule.
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify aldehyde group, defined as a carbonyl (C=O) group, where the carbonyl carbon is bonded to one hydrogen atom and one carbon atom from a carbon group, represented by the substructure `R-C(=O)H`, with R is carbon-containing substituent. Formaldehyde (`H-C(=O)H`) is not considered in this task.
+- Count the total number of aldehyde groups.
+- For each aldehyde group, provide the indices of the carbonyl carbon (C), oxygen (O), and the carbon atom (C) bonded to the carbonyl carbon. Do not include the hydrogen (H) index since the hydrogen may not have its own index.
+- Present the results in the following structured format:
+  1. Total number of aldehyde groups: Enclose this integer within <count> and </count>. 
+  2. Indices of aldehyde group atoms: Enclose the list of atom indices for each aldehyde group within <atom_indices> and </atom_indices>. Each group should be represented as a separate list of three indices. 
+- For example, if two aldehyde groups are found, the output should be formatted as follows:
+  1. <count>2</count>
+  2. <atom_indices> [1, 2, 3], [4, 5, 6] </atom_indices>

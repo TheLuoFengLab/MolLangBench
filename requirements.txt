@@ -1,0 +1,4 @@
+datasets==3.6.0
+huggingface-hub==0.31.2
+openai==1.78.1
+rdkit==2025.3.2

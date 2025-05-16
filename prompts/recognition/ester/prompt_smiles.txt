@@ -1,0 +1,15 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to determine the total number of ester functional groups present in the molecule.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify ester group, defined as a carbonyl (C=O) bonded to an oxygen atom (O). The carbonyl carbon must bonded to one carbon atom from a carbon group (R), while the ester oxygen must be bonded to another carbon atom from a carbon group (R'). This substructure is represented by `R-C(=O)-O-R'`, with R and R' are carbon-containing substituents. Formate (`H-C(=O)-O-R'`) is not considered in this task.
+- Count the total number of ester groups.
+- For each ester group, provide the indices of the carbonyl carbon (C), carbonyl oxygen (O), the ester oxygen (O), and the two carbons (C, C) bonded to this ester group.
+- Present the results in the following structured format:
+  1. Total number of ester groups: Enclose this integer within <count> and </count>. 
+  2. Indices of ester group atoms: Enclose the list of atom indices for each ester group within <atom_indices> and </atom_indices>. Each group should be represented as a separate list of five indices. 
+- For example, if two ester groups are found, the output should be formatted as follows:
+  1. <count>2</count>
+  2. <atom_indices> [1, 2, 3, 4, 5], [6, 7, 8, 9, 10] </atom_indices>
+  
+**SMILES string:** `{smiles}`

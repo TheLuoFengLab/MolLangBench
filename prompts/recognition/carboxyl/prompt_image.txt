@@ -1,0 +1,13 @@
+**Instructions:**  
+Analyze the given molecule represented as an image to determine the total number of carboxyl functional groups present in the molecule.
+
+- Atom indices are labeled directly adjacent to each atom in the image.
+- Identify carboxyl group, defined as a carbonyl (C=O) group directly bonded to a hydroxyl (-OH) group, corresponding to the substructure `C(=O)O`.
+- Count the total number of carboxyl groups.
+- For each carboxyl group, provide the indices of the carbon (C) and two oxygen (O) atoms forming the group. Do not include the hydrogen index since the hydrogen may not have its own index.
+- Present the results in the following structured format:
+  1. Total number of carboxyl groups: Enclose this integer within <count> and </count>.   
+  2. Indices of carboxyl group atoms: Enclose the list of atom indices for each carboxyl group within <atom_indices> and </atom_indices>. Each group should be represented as a separate list of three indices. 
+- For example, if two carboxyl groups are found, the output should be formatted as follows:
+  1. <count>2</count> 
+  2. <atom_indices> [1, 2, 3], [4, 5, 6] </atom_indices>

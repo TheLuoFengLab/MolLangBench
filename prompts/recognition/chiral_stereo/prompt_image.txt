@@ -1,0 +1,8 @@
+**Instructions:**
+Analyze the given molecule represented as an image to determine the R/S stereochemical configuration of the highlighted atom.
+
+- Determine whether the atom is a chiral center and classify it using the following rules:
+  - `0`: Not a chiral center or no defined stereochemistry
+  - `1`: R (rectus / clockwise)  
+  - `2`: S (sinister / counterclockwise)
+- Present the stereochemical type as an integer enclosed within <chiral_stereo> and </chiral_stereo>.

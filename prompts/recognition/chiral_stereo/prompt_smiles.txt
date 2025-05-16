@@ -1,0 +1,14 @@
+**Instructions:**
+Analyze the given molecule represented by a SMILES string to determine the R/S stereochemical configuration of a specified atom.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify the target atom using the provided index.
+- Determine whether the atom is a chiral center.
+- Classify its configuration according to the following rules:
+  - `0`: Not a chiral center or no defined stereochemistry
+  - `1`: R (rectus / clockwise)
+  - `2`: S (sinister / counterclockwise)
+- Return the stereochemical type (0, 1, or 2) in the specified structured format by enclosing it within <chiral_stereo> and </chiral_stereo>.
+
+**SMILES string:** `{smiles}`
+**Target atom index:** {target_atom}

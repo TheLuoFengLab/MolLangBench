@@ -1,0 +1,7 @@
+**Instructions:**
+Analyze the given molecule represented as an image to determine the E/Z stereochemical configuration of the double bond between the two highlighted atoms.
+
+- Determine the stereochemistry of the double bond according to the following rules:
+  - `1`: E (entgegen / trans)
+  - `2`: Z (zusammen / cis) 
+- Present the bond stereochemical type as an integer enclosed within <bond_stereo> and </bond_stereo>.

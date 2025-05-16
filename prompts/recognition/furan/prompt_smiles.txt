@@ -1,0 +1,15 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to determine the total number of furans present in the molecule.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify furan rings, defined as five-membered aromatic rings containing one oxygen atom and four carbon atoms, corresponding to the substructure `o1cccc1`.
+- Count the total number of furans.
+- For each furan ring, provide the indices of the five atoms forming the ring.
+- Present the results in the following structured format:
+  1. Total number of furan rings: Enclose this integer within <count> and </count>. 
+  2. Indices of furan ring atoms: Enclose the list of atom indices for each furan ring within <atom_indices> and </atom_indices>. Each ring should be represented as a separate list of five indices. 
+- For example, if two furan rings are found, the output should be formatted as follows:
+  1. <count>2</count>
+  2. <atom_indices> [1, 2, 3, 4, 5], [6, 7, 8, 9, 10] </atom_indices>
+  
+**SMILES string:** `{smiles}`

@@ -1,0 +1,13 @@
+**Instructions:**
+Analyze the given molecule represented by a SMILES string to determine the E/Z stereochemical configuration of the double bond between the two specified atoms.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Locate the double bond connecting the two specified atoms.
+- Determine the stereochemistry of the double bond according to the following rules:
+  - `1`: E (entgegen / trans)
+  - `2`: Z (zusammen / cis)
+- Return the bond stereochemical type (1 or 2) in the specified structured format by enclosing it within <bond_stereo> and </bond_stereo>.
+
+**SMILES string:** `{smiles}`
+**Target atom index 1:** {target_atom_0}
+**Target atom index 2:** {target_atom_1}

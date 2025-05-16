@@ -1,0 +1,15 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to determine the total number of ketone functional groups present in the molecule.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify ketone group, defined as a carbonyl (C=O) group, where the carbon atom is directly bonded to two other carbon atoms, corresponding to the substructure `R-C(=O)-R'`, where R and R' are carbon-containing substituents.
+- Count the total number of ketone groups.
+- For each ketone group, provide the indices of the carbonyl carbon (C), oxygen (O), and the two carbon atoms (C, C) bonded to the carbonyl carbon.
+- Present the results in the following structured format:
+  1. Total number of ketone groups: Enclose this integer within <count> and </count>. 
+  2. Indices of ketone group atoms: Enclose the list of atom indices for each ketone group within <atom_indices> and </atom_indices>. Each group should be represented as a separate list of four indices. 
+- For example, if two ketone groups are found, the output should be formatted as follows:
+  1. <count>2</count> 
+  2. <atom_indices> [1, 2, 3, 4], [5, 6, 7, 8] </atom_indices>
+
+**SMILES string:** `{smiles}`"

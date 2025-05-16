@@ -1,0 +1,15 @@
+**Instructions:**  
+Analyze the given molecule represented by a SMILES string to determine the total number of amide functional groups present in the molecule.
+
+- Assign unique indices to all non-hydrogen atoms in the molecule based on their order of appearance in the SMILES string (left to right), starting from 0.
+- Identify amide group, defined as carbonyl (C=O) group directly bonded to a nitrogen (N) atom, corresponding to the substructure `C(=O)N`.
+- Count the total number of amide groups.
+- For each amide group, provide the indices of the carbonyl carbon (C), oxygen (O), and nitrogen (N) atoms forming the group.
+- Present the results in the following structured format:
+  1. Total number of amide groups: Enclose this integer within <count> and </count>. 
+  2. Indices of amide group atoms: Enclose the list of atom indices for each amide group within <atom_indices> and </atom_indices>. Each group should be represented as a separate list of three indices.
+- For example, if two amide groups are found, the output should be formatted as follows:
+  1. <count>2</count>
+  2. <atom_indices> [1, 2, 3], [4, 5, 6] </atom_indices>
+
+**SMILES string:** `{smiles}`
