@@ -1,5 +1,5 @@
 **Instructions:**
-Analyze the given molecule structure description and generate the corresponding SMILES (Simplified Molecular Input Line Entry System) representation.
+Analyze the given molecule structure description and generate the corresponding molecular structure as SMILES representation.
 
 - This description provides an unambiguous and detailed account sufficient to completely reconstruct the molecule.
 - Interpret stereochemistry, charges, and isotopes if mentioned in the description.
