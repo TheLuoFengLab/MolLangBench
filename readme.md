@@ -19,6 +19,13 @@
   [![GitHub License][license-shield]][license-url]
 
   <p align="center">
+    <a href="https://arxiv.org/abs/2505.15054">
+      <img src="https://info.arxiv.org/brand/images/brand-supergraphic.jpg" alt="arxiv" width="25" height="25" style="vertical-align: middle; margin-right: 0px;">
+    </a>    
+    <a href="https://arxiv.org/abs/2505.15054">
+      ArXiv
+    </a>
+    |
     <a href="https://huggingface.co/datasets/ChemFM/MolLangBench">
       <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20">
     </a>
@@ -31,8 +38,6 @@
   </p>
 
 </div>
-
-> Our paper will be online soon. Stay tuned for the preprint and citation information.
 
 <details>
   <summary>Table of Contents</summary>
@@ -53,6 +58,7 @@
       <a href="#benchmark-results">Benchmark Results</a>
     </li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#citation">Citation</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -352,6 +358,20 @@ Project Supervisor: [Feng Luo](mailto:luofeng@clemson.edu) - luofeng@clemson.edu
 Join our community on [Discord](https://discord.gg/hpW7sdMQGP) to stay updated or ask questions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Citation
+If you find our work valuable, please consider giving the project a star and citing it in your research:
+```
+@article{MolLangBench,
+      title={MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation},  
+      author={Feiyang Cai and Jiahui Bai and Tao Tang and Joshua Luo and Tianyu Zhu and Ling Liu and Feng Luo},
+      year={2025},
+      journal = {arXiv preprint arXiv:2505.15054},
+}
+```
+Thank you for your support!
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
