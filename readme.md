@@ -79,7 +79,7 @@ It is straightforward to extend this repository to evaluate other language or mu
 
 ## Getting Started
 
-You can easily set up the required environment using Conda by following these steps:
+You can easily set up the required environment by following these steps:
 
 * Clone the repository
 
