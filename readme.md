@@ -343,7 +343,6 @@ Below are the complete evaluation results for molecule editing and generation ta
 | Molecule generation | 0.525/0.005| 0.800/0.055     | 0.710/0.035| 0.335/0.035| 0.385/0.100| 0.450/0.175| 0.400/0.045 | 0.205/0.010| **0.670/0.290**| 0.600/0.260| 0.000        |
 
 - Each entry reports **SMILES validity / accuracy**.
-- For "GPT Image 1", only SMILES validity is reported due to image output format.
 - **Bold** entries highlight the best performance.
 </details>
 
