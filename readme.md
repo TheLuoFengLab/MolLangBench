@@ -54,6 +54,7 @@
     <li>
       <a href="#usage">Usage</a>
     </li>
+    <li><a href="#miscellaneous">Miscellaneous</a></li>
     <li>
       <a href="#benchmark-results">Benchmark Results</a>
     </li>
