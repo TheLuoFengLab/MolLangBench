@@ -179,7 +179,7 @@ def create_editing_prompts(
 def create_recognition_prompts(
     output_file: str,
     modality: Literal["image", "smiles"],
-    subtask: str,
+    subtask: str = None,
     split: str = "test",
     prompt_template_dir: str = "prompts/recognition",
     save_images: bool = False
@@ -190,7 +190,7 @@ def create_recognition_prompts(
     Args:
         output_file: Path to output JSONL file
         modality: Either "image" or "smiles"
-        subtask: The specific recognition subtask
+        subtask: The specific recognition subtask (if None, process all subtasks)
         split: Dataset split to use (default: "test")
         prompt_template_dir: Directory containing prompt templates
         save_images: Whether to save input images (only for image modality)
@@ -198,23 +198,33 @@ def create_recognition_prompts(
     # Load dataset with recognition config and subtask
     dataset = load_dataset("ChemFM/MolLangBench", f"recognition", split=split)
     
-    # we need to filter the dataset to only include the subtask
-    dataset = dataset.filter(lambda x: x["task"] == subtask)
-    
-    # Load prompt template
-    template_path = Path(prompt_template_dir) / subtask / f"prompt_{modality}.txt"
-    if not template_path.exists():
-        raise FileNotFoundError(f"Prompt template not found at {template_path}")
-    
-    with open(template_path, "r") as f:
-        template = f.read().strip()
+    if subtask is None:
+        print("Warning: No recognition_subtask specified. Processing all subtasks in the dataset.")
+        # Get all unique tasks in the dataset
+        all_tasks = set(dataset["task"])
+        print(f"Found subtasks: {sorted(all_tasks)}")
+    else:
+        # Filter the dataset to only include the subtask
+        dataset = dataset.filter(lambda x: x["task"] == subtask)
+        all_tasks = {subtask}
     
     # Create output directory if it doesn't exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
     # Generate prompts and write to JSONL
     with open(output_file, "w") as f:
-        for idx, item in tqdm(enumerate(dataset), total=len(dataset), desc=f"Creating recognition prompts for {subtask}"):
+        for idx, item in tqdm(enumerate(dataset), total=len(dataset), desc=f"Creating recognition prompts"):
+            current_subtask = item["task"]
+            
+            # Load prompt template for this specific subtask
+            template_path = Path(prompt_template_dir) / current_subtask / f"prompt_{modality}.txt"
+            if not template_path.exists():
+                print(f"Warning: Prompt template not found at {template_path}. Skipping item {idx} for subtask {current_subtask}")
+                continue
+            
+            with open(template_path, "r") as template_file:
+                template = template_file.read().strip()
+            
             # Format prompt using template
             if modality == "smiles":
                 # Handle target atoms if present
@@ -238,16 +248,16 @@ def create_recognition_prompts(
                     prompt = template.format(smiles=item["smiles"])
                 
                 output_entry = {
-                    "id": f"recognition_{subtask}_{split}_{modality}_{idx}",
+                    "id": f"recognition_{current_subtask}_{split}_{modality}_{idx}",
                     "prompt": prompt
                 }
             else:  # image modality
                 prompt = template.format()
                 # Encode the image
-                image_save_path = os.path.join(os.path.dirname(output_file), "images", f"recognition_{subtask}_{split}_{modality}_{idx}.png") if save_images else None
+                image_save_path = os.path.join(os.path.dirname(output_file), "images", f"recognition_{current_subtask}_{split}_{modality}_{idx}.png") if save_images else None
                 encoded_image = encode_image(item["image"], image_save_path)
                 output_entry = {
-                    "id": f"recognition_{subtask}_{split}_{modality}_{idx}",
+                    "id": f"recognition_{current_subtask}_{split}_{modality}_{idx}",
                     "prompt": prompt,
                     "input_image": encoded_image
                 }
@@ -259,14 +269,14 @@ def main():
     parser = argparse.ArgumentParser(description="Create JSONL files for prompts")
     parser.add_argument("--task_type", type=str, required=True, choices=["recognition", "generation", "editing"],
                       help="Type of task (recognition, generation, or editing)")
-    parser.add_argument("--modality", type=str, required=True, choices=["image", "smiles"],
+    parser.add_argument("--modality", type=str, required=True, choices=["image", "smiles", "image_to_smiles"],
                       help="Modality for molecule representation (image or smiles)")
     parser.add_argument("--output_file", type=str, required=True,
                       help="Path to output JSONL file")
     parser.add_argument("--split", type=str, default="test",
                       help="Dataset split to use (default: test)")
     parser.add_argument("--recognition_subtask", type=str,
-                      help="Subtask type for recognition task (required only for recognition task)")
+                      help="Subtask type for recognition task (optional - if not provided, all subtasks will be processed)")
     parser.add_argument("--save_images", action="store_true",
                       help="Whether to save input images (only for image modality in recognition and editing tasks)")
     
@@ -279,12 +289,10 @@ def main():
             split=args.split
         )
     elif args.task_type == "recognition":
-        if not args.recognition_subtask:
-            raise ValueError("recognition_subtask is required for recognition task")
         create_recognition_prompts(
             output_file=args.output_file,
             modality=args.modality,
-            subtask=args.recognition_subtask,
+            subtask=args.recognition_subtask,  # Can be None now
             split=args.split,
             save_images=args.save_images
         )
