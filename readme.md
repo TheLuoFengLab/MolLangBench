@@ -22,6 +22,7 @@
   [![GitHub License][license-shield]][license-url]
   [![arXiv](https://img.shields.io/badge/arXiv-2505.15054-b31b1b.svg)](https://arxiv.org/abs/2505.15054)
   [![Hugging Face](https://img.shields.io/badge/🤗%20Datasets-ChemFM%2FMolLangBench-yellow)](https://huggingface.co/datasets/ChemFM/MolLangBench)
+  [![Discord](https://img.shields.io/discord/1297768207330967633?label=Discord&logo=discord)](https://discord.gg/hpW7sdMQGP)
   
 
 </div>
