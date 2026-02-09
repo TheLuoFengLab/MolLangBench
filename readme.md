@@ -46,6 +46,9 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
+      <a href="#related-project">Related Project</a>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
     </li>
     <li>
@@ -59,6 +62,7 @@
       <a href="#benchmark-results">Benchmark Results</a>
     </li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#ackownledgements">Acknowledgements</a></li>
     <li><a href="#citation">Citation</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -69,6 +73,10 @@
 
 ## About The Project
 
+**MolLangBench** is the official repository for the ICLR 2026 paper:
+
+> *MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation*
+
 **MolLangBench** is a comprehensive benchmark designed to evaluate the fundamental capabilities of AI models in language-prompted molecular structure recognition, editing, and generation.
 
 This repository provides:
@@ -76,6 +84,17 @@ This repository provides:
 - Evaluation scripts and prompt templates to test OpenAI models (e.g., o1, o3, o4-mini) using either molecular images or SMILES strings as inputs
 
 It is straightforward to extend this repository to evaluate other language or multimodal models by adapting the provided input formatting and evaluation templates.
+
+## Related Project
+
+We also release a companion dataset: 👉 **[MolLangData](https://github.com/TheLuoFengLab/MolLangData)**
+
+MolLangData provides large-scale paired data of molecular structures and natural-language descriptions generated via a rule-regularized pipeline, designed to support training and alignment of molecular language models.
+
+MolLangBench focuses on *evaluation*, while MolLangData focuses on *training data construction*.  
+Together they form a unified framework for molecular-language alignment research.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
@@ -358,6 +377,13 @@ Join our community on [Discord](https://discord.gg/hpW7sdMQGP) to stay updated o
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Acknowledgements
+
+We sincerely thank **Reviewer ccMB** from the NeurIPS 2025 Datasets and Benchmarks Track for exceptionally thoughtful and constructive feedback.  
+The reviewer’s encouragement and detailed suggestions significantly influenced the direction of this work and motivated our continued exploration of molecular-language alignment, including the follow-up project **MolLangData**.
+
+We also thank Yi Hu for assistance with data annotation and Dr. Yongkai Wu (Clemson University) for providing access to Azure AI Foundry resources that supported large-scale evaluation.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Citation
 If you find our work valuable, please consider giving the project a star and citing it in your research:
@@ -370,7 +396,7 @@ If you find our work valuable, please consider giving the project a star and cit
 }
 ```
 Thank you for your support!
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
