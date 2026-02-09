@@ -381,8 +381,7 @@ Join our community on [Discord](https://discord.gg/hpW7sdMQGP) to stay updated o
 
 ## Acknowledgements
 
-We sincerely thank **Reviewer ccMB** from the NeurIPS 2025 Datasets and Benchmarks Track for exceptionally thoughtful and constructive feedback.  
-Although the previous submission was not accepted, the reviewer actively championed the work and provided detailed suggestions and encouragement that meaningfully shaped this project and inspired our continued exploration of molecular-language alignment, including the follow-up work **MolLangData**.
+We sincerely thank **Reviewer ccMB** from the NeurIPS 2025 Datasets and Benchmarks Track for exceptionally thoughtful and constructive feedback. Although the previous submission was not accepted, the reviewer actively championed the work and provided detailed suggestions and encouragement that meaningfully shaped this project and inspired our continued exploration of molecular-language alignment, including the follow-up work **MolLangData**.
 
 We also thank Yi Hu for assistance with data annotation and Dr. Yongkai Wu (Clemson University) for providing access to Azure AI Foundry resources that supported large-scale evaluation.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
