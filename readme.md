@@ -268,7 +268,6 @@ This will print out the evaluation metrics for your selected task and model.
 > - For automatic evaluation, you will also need a [Mathpix](https://mathpix.com/) account and API key to convert the generated molecular images back to SMILES strings.
 >
 > Example scripts for these tasks are provided in the [`Miscellaneous`](./Miscellaneous) folder.  
-> We plan to provide a more streamlined workflow in the future.
 
 ---
 
@@ -363,11 +362,11 @@ Join our community on [Discord](https://discord.gg/hpW7sdMQGP) to stay updated o
 ## Citation
 If you find our work valuable, please consider giving the project a star and citing it in your research:
 ```
-@article{MolLangBench,
-      title={MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation},  
-      author={Feiyang Cai and Jiahui Bai and Tao Tang and Joshua Luo and Tianyu Zhu and Ling Liu and Feng Luo},
-      year={2025},
-      journal = {arXiv preprint arXiv:2505.15054},
+@inproceedings{MolLangBench,
+  title={MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation},
+  author={Feiyang Cai and Jiahui Bai and Tao Tang and Guijuan He and Joshua Luo and Tianyu Zhu and Srikanth Pilla and Gang Li and Ling Liu and Feng Luo},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
 }
 ```
 Thank you for your support!
