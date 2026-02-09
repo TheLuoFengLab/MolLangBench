@@ -10,32 +10,19 @@
 [license-shield]: https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square&color=94b594
 [license-url]: https://github.com/TheLuoFengLab/MolLangBench/blob/main/LICENSE
 
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <h1 align="center">MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation</h1>
 
   [![Stargazers][stars-shield]][stars-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Issues][issues-shield]][issues-url]
   [![GitHub License][license-shield]][license-url]
-
-  <p align="center">
-    <a href="https://arxiv.org/abs/2505.15054">
-      <img src="https://info.arxiv.org/brand/images/brand-supergraphic.jpg" alt="arxiv" width="25" height="25" style="vertical-align: middle; margin-right: 0px;">
-    </a>    
-    <a href="https://arxiv.org/abs/2505.15054">
-      ArXiv
-    </a>
-    |
-    <a href="https://huggingface.co/datasets/ChemFM/MolLangBench">
-      <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" height="20">
-    </a>
-    <a href="https://huggingface.co/datasets/ChemFM/MolLangBench">Hugging Face Dataset</a>
-    |
-    <a href="https://discord.gg/hpW7sdMQGP">
-      <img src="https://camo.githubusercontent.com/ae76bfbcd3ea4af324682842213b28d9a7ebdd8791d8531d1b7e3b8b4d2a0302/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f646973636f72642e737667" alt="Discord" width="25" height="25">
-    </a>
-    <a href="https://discord.gg/hpW7sdMQGP">Discord</a>
-  </p>
+  [![arXiv](https://img.shields.io/badge/arXiv-2505.15054-b31b1b.svg)](https://arxiv.org/abs/2505.15054)
+  [![Hugging Face](https://img.shields.io/badge/🤗%20Datasets-ChemFM%2FMolLangBench-yellow)](https://huggingface.co/datasets/ChemFM/MolLangBench)
+  
 
 </div>
 
