@@ -62,7 +62,7 @@
       <a href="#benchmark-results">Benchmark Results</a>
     </li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#ackownledgements">Acknowledgements</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#citation">Citation</a></li>
     <li><a href="#license">License</a></li>
   </ol>
