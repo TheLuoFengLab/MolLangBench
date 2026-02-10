@@ -3,12 +3,10 @@
 <!-- PROJECT SHIELDS -->
 [stars-shield]: https://img.shields.io/github/stars/TheLuoFengLab/MolLangBench.svg?style=flat-square&color=b75347
 [stars-url]: https://github.com/TheLuoFengLab/MolLangBench/stargazers
-[forks-shield]: https://img.shields.io/github/forks/TheLuoFengLab/MolLangBench.svg?style=flat-square&color=df7e66
+[forks-shield]: https://img.shields.io/github/forks/TheLuoFengLab/MolLangBench.svg
 [forks-url]: https://github.com/TheLuoFengLab/MolLangBench/network/members
-[issues-shield]: https://img.shields.io/github/issues/TheLuoFengLab/MolLangBench.svg?style=flat-square&color=edc775
+[issues-shield]: https://img.shields.io/github/issues/TheLuoFengLab/MolLangBench.svg
 [issues-url]: https://github.com/TheLuoFengLab/MolLangBench/issues
-[license-shield]: https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square&color=94b594
-[license-url]: https://github.com/TheLuoFengLab/MolLangBench/blob/main/LICENSE
 
 
 <!-- PROJECT LOGO -->
@@ -16,14 +14,16 @@
 <div align="center">
   <h1 align="center">MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation</h1>
 
-  [![Stargazers][stars-shield]][stars-url]
+  [![Stargazers](https://img.shields.io/github/stars/TheLuoFengLab/MolLangBench?style=social&label=Star)](https://github.com/TheLuoFengLab/MolLangBench)
   [![Forks][forks-shield]][forks-url]
   [![Issues][issues-shield]][issues-url]
-  [![GitHub License][license-shield]][license-url]
-  [![arXiv](https://img.shields.io/badge/arXiv-2505.15054-b31b1b.svg)](https://arxiv.org/abs/2505.15054)
-  [![Hugging Face](https://img.shields.io/badge/🤗%20Datasets-ChemFM%2FMolLangBench-yellow)](https://huggingface.co/datasets/ChemFM/MolLangBench)
   [![Discord](https://img.shields.io/discord/1297768207330967633?label=Discord&logo=discord)](https://discord.gg/hpW7sdMQGP)
+
   
+  
+  [![Hugging Face](https://img.shields.io/badge/🤗%20Datasets-ChemFM%2FMolLangBench-yellow)](https://huggingface.co/datasets/ChemFM/MolLangBench)
+  [![arXiv](https://img.shields.io/badge/arXiv-2505.15054-b31b1b.svg)](https://arxiv.org/abs/2505.15054)
+  [![License: MIT](https://img.shields.io/github/license/TheLuoFengLab/MolLangBench)](https://github.com/TheLuoFengLab/MolLangBench/blob/main/LICENSE)
 
 </div>
 
@@ -35,6 +35,9 @@
     </li>
     <li>
       <a href="#related-project">Related Project</a>
+    </li>
+    <li>
+      <a href="#collaboration-wanted">Collaboration Wanted</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -77,8 +80,15 @@ We also release a companion dataset: **[MolLangData](https://github.com/TheLuoFe
 
 MolLangData provides large-scale paired data of molecular structures and natural-language descriptions generated via a rule-regularized pipeline, designed to support training and alignment of molecular language models.
 
-MolLangBench focuses on *evaluation*, while MolLangData focuses on *training data construction*.  
-Together they form a unified framework for molecular-language alignment research.
+MolLangBench focuses on *evaluation*, while MolLangData focuses on *training data construction*.  Together they form a unified framework for molecular-language alignment research.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Collaboration Wanted
+
+We are actively continuing research on molecular–language alignment, including dataset curation and multimodal model development.
+
+We welcome collaborators who are interested in working together in this area.  Please contact [Feiyang Cai](mailto:feiyang@clemson.edu) to discuss potential collaboration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
