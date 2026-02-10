@@ -14,7 +14,7 @@
 <div align="center">
   <h1 align="center">MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation</h1>
 
-  [![Stargazers](https://img.shields.io/github/stars/TheLuoFengLab/MolLangBench?style=social&label=Star)](https://github.com/TheLuoFengLab/MolLangBench)
+  [![Stargazers](https://img.shields.io/github/stars/TheLuoFengLab/MolLangBench?style=social&label=Star)][stars-url]
   [![Forks][forks-shield]][forks-url]
   [![Issues][issues-shield]][issues-url]
   [![Discord](https://img.shields.io/discord/1297768207330967633?label=Discord&logo=discord)](https://discord.gg/hpW7sdMQGP)
