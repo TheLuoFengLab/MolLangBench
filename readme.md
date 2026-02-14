@@ -386,14 +386,25 @@ We also thank Yi Hu for assistance with data annotation and Dr. Yongkai Wu (Clem
 
 ## Citation
 If you find our work valuable, please consider giving the project a star and citing it in your research:
-```
+```bibtex
 @inproceedings{MolLangBench,
   title={MolLangBench: A Comprehensive Benchmark for Language-Prompted Molecular Structure Recognition, Editing, and Generation},
-  author={Feiyang Cai and Jiahui Bai and Tao Tang and Guijuan He and Joshua Luo and Tianyu Zhu and Srikanth Pilla and Gang Li and Ling Liu and Feng Luo},
+  author={Cai, Feiyang and Bai, Jiahui and Tang, Tao and He, Guijuan and Luo, Joshua and Zhu, Tianyu and Pilla, Srikanth and Li, Gang and Liu, Ling and Luo, Feng},
   booktitle={The Fourteenth International Conference on Learning Representations},
   year={2026},
 }
 ```
+
+**Another project from us:** We also release [**MolLangData**](https://github.com/TheLuoFengLab/MolLangData), a large-scale dataset of molecular structures paired with natural-language descriptions for training and evaluating molecular structure–language models. If you use MolLangData, please cite:
+```
+@article{MolLangData,
+  title={A Large-Scale Dataset for Molecular Structure-Language Description via a Rule-Regularized Method},
+  author={Cai, Feiyang and He, Guijuan and Hu, Yi and Wang, Jingjing and Luo, Joshua and Zhu, Tianyu and Pilla, Srikanth and Li, Gang and Liu, Ling and Luo, Feng},
+  year={2026},
+  journal={arXiv preprint arXiv:2602.02320},
+}
+```
+
 Thank you for your support!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
