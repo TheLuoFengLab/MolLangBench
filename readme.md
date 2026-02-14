@@ -396,7 +396,7 @@ If you find our work valuable, please consider giving the project a star and cit
 ```
 
 **Another project from us:** We also release [**MolLangData**](https://github.com/TheLuoFengLab/MolLangData), a large-scale dataset of molecular structures paired with natural-language descriptions for training and evaluating molecular structure–language models. If you use MolLangData, please cite:
-```
+```bibtex
 @article{MolLangData,
   title={A Large-Scale Dataset for Molecular Structure-Language Description via a Rule-Regularized Method},
   author={Cai, Feiyang and He, Guijuan and Hu, Yi and Wang, Jingjing and Luo, Joshua and Zhu, Tianyu and Pilla, Srikanth and Li, Gang and Liu, Ling and Luo, Feng},
