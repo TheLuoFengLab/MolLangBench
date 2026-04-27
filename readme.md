@@ -37,9 +37,6 @@
       <a href="#related-project">Related Project</a>
     </li>
     <li>
-      <a href="#collaboration-wanted">Collaboration Wanted</a>
-    </li>
-    <li>
       <a href="#getting-started">Getting Started</a>
     </li>
     <li>
@@ -81,14 +78,6 @@ We also release a companion dataset: **[MolLangData](https://github.com/TheLuoFe
 MolLangData provides large-scale paired data of molecular structures and natural-language descriptions generated via a rule-regularized pipeline, designed to support training and alignment of molecular language models.
 
 MolLangBench focuses on *evaluation*, while MolLangData focuses on *training data construction*.  Together they form a unified framework for molecular-language alignment research.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Collaboration Wanted
-
-We are actively continuing research on molecular–language alignment, including dataset curation and multimodal model development.
-
-We welcome collaborators who are interested in working together in this area.  Please contact [Feiyang Cai](mailto:feiyang@clemson.edu) to discuss potential collaboration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
